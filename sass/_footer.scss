@@ -1,0 +1,116 @@
+.footer {
+  background: #333;
+  color: #fff;
+  font: 300 11px 'Tahoma';
+}
+
+.footer__top {
+  @extend .wrapper;
+  padding: 24px 0 0;
+}
+
+.footer__bottom {
+  @extend .wrapper;
+  border-top: 1px solid #fff;
+  padding:7px 0 30px 10px ;
+}
+
+.footer__nav {
+  @extend .nav;
+  float: left;
+  min-width: 165px;
+  @include box-sizing(border-box);
+  &:last-child,
+  &.last{
+    padding: 0 0 0 115px !important;
+  }
+  li {
+    padding-bottom: 5px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
+    &:hover {
+      border-bottom: 0;
+    }
+  }
+}
+
+.footer__nav__title {
+  padding: 0 0 13px 0 !important;
+  font-weight: 700;
+  font-size: 12px !important;
+}
+
+.nav_soc {
+  @extend .nav_hor;
+  padding: 7px 0 15px 0;
+  li {
+    padding: 0 6px;
+  }
+}
+
+%nav_soc__ico {
+  display: block;
+  border: 0 !important;
+}
+
+.nav_soc__vk {
+  @extend %nav_soc__ico;
+  @include spr(images, nav_soc__vk);
+}
+
+.nav_soc__fb {
+  @extend %nav_soc__ico;
+  @include spr(images, nav_soc__fb);
+}
+
+.nav_soc__twit {
+  @extend %nav_soc__ico;
+  @include spr(images, nav_soc__twit);
+}
+
+.nav_pay {
+  @extend .nav_hor;
+  padding: 0 0 5px 0;
+}
+
+%nav_pay__ico {
+  @extend %nav_soc__ico;
+}
+
+.nav_pay__amex {
+  @extend %nav_pay__ico;
+  @include spr(images, nav_pay__amex);
+}
+
+.nav_pay__visa {
+  @extend %nav_pay__ico;
+  @include spr(images, nav_pay__visa);
+}
+
+.nav_pay__mc {
+  @extend %nav_pay__ico;
+  @include spr(images, nav_pay__mc);
+}
+
+.nav_pay__discover {
+  @extend %nav_pay__ico;
+  @include spr(images, nav_pay__discover);
+}
+
+.nav_pay__1 {
+  @extend %nav_pay__ico;
+  @include spr(images, nav_pay__1);
+}
+
+.nav_pay__j {
+  @extend %nav_pay__ico;
+  @include spr(images, nav_pay__j);
+}
+
+.nav_pay__pp {
+  @extend %nav_pay__ico;
+  @include spr(images, nav_pay__pp);
+}

@@ -1,0 +1,42 @@
+@import "blankwork";
+@import "settings";
+
+html {
+  height: 100%;
+  font-family: Verdana;
+}
+
+body {
+  font-family: $font-name;
+  min-width: 960px;
+  font-size: 12px;
+  color: #333;
+  background: #fff;
+}
+
+
+.wrapper {
+  @extend .clearfix;
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+$images-layout: verical;
+$images-spacing: 20px;
+@import "images/*.png";
+
+/***************************************************/
+/*      header
+/***************************************************/
+@import "header";
+
+/***************************************************/
+/*      content
+/***************************************************/
+@import "content";
+
+/***************************************************/
+/*      footer
+/***************************************************/
+@import "footer";

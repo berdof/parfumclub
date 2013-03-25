@@ -1,0 +1,238 @@
+.content {
+  @extend .wrapper;
+  padding-bottom: 19px;
+}
+
+.slider__in {
+
+}
+
+.slider {
+  position: relative;
+  width: 677px;
+  height: 324px;
+}
+
+.slider__item {
+  width: 677px;
+  height: 324px;
+  position: relative;
+}
+
+.slider__item__info {
+  min-height: 36px;
+  @include box-sizing(border-box);
+  color: #fff;
+  padding: 10px 0 0 24px;
+  font: 300 14px 'Tahoma';
+  background: #af0e5d;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.slider__nav {
+  position: absolute;
+  z-index: 10;
+  right: 45px;
+  bottom: 10px;
+  overflow: hidden;
+  a {
+    @include box-sizing(border-box);
+    margin: 0 3px;
+    float: left;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border: 4px solid #fff;
+    background: #fff;
+    @include border-radius(100%);
+    &.active {
+      background: none;
+    }
+  }
+}
+
+.slider__item__buy {
+  @include h-line-height(30px);
+  @include grad(linear-gradient(top, #e68a9c, #a31140));
+  @include box-shadow(1px 1px 0 #ccc);
+  @include box-sizing(border-box);
+  -ms-behavior: url(PIE.htc);
+  behavior: url(PIE.htc);
+  padding: 0 0 0 75px;
+  width: 170px;
+  right: 33px;
+  bottom: 95px;
+  position: absolute;
+  color: #fff !important;
+  font-style: italic;
+  font-size: 15px;
+  font-family: 'Calibri';
+  text-decoration: none !important;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 56px;
+    top: 11px;
+    display: block;
+    @include spr(images, slider__item__buy);
+  }
+  &:hover {
+    background: #a31140;
+  }
+}
+
+.best-stuff {
+  width: 242px;
+  border: 1px solid #359afe;
+  @include box-sizing(border-box);
+  .stuff {
+    margin: 10px auto 0 auto;
+    border-color: #fff !important;
+  }
+  .stuff__more {
+    @extend .hover;
+  }
+  .stuff__price{
+    font-size: 11px;
+  }
+}
+
+.best-stuff__title {
+  display: block;
+  height: 30px;
+  background: #359afe;
+  color: #fff;
+  font: 300 11px/30px 'Tahoma';
+  text-align: center;
+}
+
+.stuff {
+  border: 1px solid transparent;
+  width: 201px;
+  @include box-sizing(border-box);
+  padding: 13px 0;
+  margin: 0 0 30px 38px;
+  &:first-child {
+    margin-left: 0 !important;
+  }
+  text-align: center;
+  &:hover {
+    border: 1px solid #ccc;
+  }
+  h2 {
+    font: 300 12px 'Verdana';
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
+.stuff__img {
+  height: 143px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  img {
+    max-height: 143px;
+    min-width: 180px;
+  }
+}
+
+.stuff__price {
+  @include h-line-height(29px);
+  font-size: 12px;
+}
+
+.stuff__price_new {
+  font: 300 16px 'Tahoma';
+  color: #003399;
+  padding-bottom: 11px;
+}
+
+.stuff__more {
+  @include h-line-height(27px);
+  background: #fff;
+  padding: 0 36px;
+  border: 1px solid #359afe;
+  width: 143px;
+  @include box-sizing(border-box);
+  display: inline-block;
+  text-decoration: none !important;
+  color: #359afe;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    right: images-sprite-width(stuff__more)*-1;
+    top: -1px;
+    display: block;
+    @include spr(images, stuff__more);
+  }
+  &:hover,
+  &.hover {
+    color: #fff;
+    background: #359afe;
+    &:after {
+      @include images-sprite(stuff__more__h);
+    }
+  }
+}
+
+.title {
+  border-bottom: 1px dotted #ccc;
+  margin: 20px 0 18px 0;
+  h2 {
+    border: 1px dotted #ccc;
+    border-bottom: 0;
+    display: inline-block;
+    background: #f4f4f4;
+    height: 25px;
+    padding: 0 82px 0 62px;
+    font: 300 11px/25px 'Tahoma';
+    color: #333;
+  }
+}
+
+.why-we{
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  overflow: hidden;
+ margin-bottom: 47px;
+}
+%why-we__item{
+  display: block;
+  height: 39px;
+  margin: 7px 74px 0 0;
+  float: left;
+}
+.why-we__item__orig{
+  @extend %why-we__item;
+  @include images-sprite(why-we__ico_orig);
+  padding-left: 78px;
+}
+.why-we__item__delivery{
+  @extend %why-we__item;
+  @include images-sprite(why-we__ico_delivery);
+  padding-left: 45px;
+}
+.why-we__item__price{
+  @extend %why-we__item;
+  @include images-sprite(why-we__ico_price);
+  padding-left: 37px;
+}
+.why-we__item__unique{
+  @extend %why-we__item;
+  @include images-sprite(why-we__ico_unique);
+  padding-left: 35px;
+}
+
+.why-we__title{
+  float: left;
+  padding: 17px 0 0 45px;
+}
