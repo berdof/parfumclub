@@ -107,7 +107,14 @@ a{
   overflow: hidden;
 }
 .tac{
-  text-align: center;
+  text-align: center !important;
+}
+.tar{
+  text-align: right !important;
+}
+
+.tal{
+  text-align: left !important;
 }
 
 .nav{

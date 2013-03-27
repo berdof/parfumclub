@@ -22,6 +22,19 @@ body {
   margin: 0 auto;
 }
 
+h1{
+  font-size: 25px;
+  padding-bottom: 14px;
+}
+h2{
+  font-size: 20px;
+  padding-bottom: 14px;
+}
+h3{
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
 $images-layout: verical;
 $images-spacing: 20px;
 @import "images/*.png";
