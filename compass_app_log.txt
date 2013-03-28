@@ -1434,3 +1434,7 @@
 2013-03-28 07:37:34 overwrite css/style.css 
 2013-03-28 07:37:37 unchanged D:/work/Ellesar/Parfumclub/html/images/images-s615b5421c6.png
 2013-03-28 07:37:38 overwrite css/style.css 
+2013-03-28 07:46:54    remove .sass-cache/ 
+2013-03-28 07:46:54    remove css/style.css 
+2013-03-28 07:46:57    create D:/work/Ellesar/Parfumclub/html/images/images-s615b5421c6.png
+2013-03-28 07:46:57    create css/style.css 
