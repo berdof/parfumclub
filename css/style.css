@@ -964,9 +964,12 @@ label:hover {
 
 .tabs__nav {
   border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .tabs__nav li {
   padding: 0 !important;
+  position: relative;
+  top: 1px;
 }
 .tabs__nav a {
   height: 25px;
@@ -999,6 +1002,10 @@ label:hover {
 }
 .tabs__contents__item:first-child {
   display: block;
+}
+
+.stuff-single {
+  padding-bottom: 30px;
 }
 
 .stuff-single__img {
@@ -1037,6 +1044,20 @@ label:hover {
   border-bottom: 18px solid transparent;
 }
 
+.stuff-single__buy2 {
+  display: inline-block;
+  border-bottom: 1px dotted #333333;
+  text-decoration: none !important;
+}
+.stuff-single__buy2:hover {
+  border-bottom-color: #fff;
+}
+
+.stuff-single__price {
+  font-weight: 700;
+  font-size: 14px;
+}
+
 .stuff-single__info__table {
   width: 605px;
 }
@@ -1052,10 +1073,19 @@ label:hover {
 }
 .stuff-single__info__table td {
   padding: 12px 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.2;
   border-left: 1px dotted #ccc;
 }
 .stuff-single__info__table td:first-child {
   border-left: none;
+}
+
+.good-title h2 {
+  font: 300 italic 14px 'Verdana';
+  color: #333;
+  padding: 15px 0;
 }
 
 /***************************************************/

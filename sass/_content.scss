@@ -447,8 +447,11 @@ label {
 .tabs__nav {
   @extend .nav_hor;
   border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   li {
     padding: 0 !important;
+    position: relative;
+    top: 1px;
   }
   a {
     @include h-line-height(25px);
@@ -485,6 +488,7 @@ label {
 
 .stuff-single {
   @extend .clearfix;
+  padding-bottom: 30px;
 }
 
 .stuff-single__img {
@@ -523,6 +527,19 @@ label {
     border-bottom: 18px solid transparent;
   }
 }
+.stuff-single__buy2{
+  display: inline-block;
+  border-bottom: 1px dotted #333 ;
+  text-decoration: none !important;
+  &:hover{
+    border-bottom-color: #fff;
+  }
+}
+
+.stuff-single__price{
+  font-weight: 700;
+  font-size: 14px;
+}
 
 .stuff-single__info__table {
   width: 605px;
@@ -538,9 +555,20 @@ label {
   }
   td {
     padding: 12px 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.2;
     border-left: 1px dotted #ccc;
     &:first-child {
       border-left: none;
     }
+  }
+}
+
+.good-title{
+  h2{
+    font: 300 italic 14px 'Verdana';
+    color: #333;
+    padding: 15px 0;
   }
 }

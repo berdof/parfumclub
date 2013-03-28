@@ -19,7 +19,7 @@
         activePagerClass: 'active'
     });
 
-    $('.tabs__nav a').on('click', function () {
+    $('.tabs__nav a').on('click', function (e) {
         var navItem = $(this);
         navItem.addClass('active')
             .closest('li').siblings('li').find('a').removeClass('active');
@@ -27,6 +27,7 @@
             .next('.tabs__contents')
             .find('.tabs__contents__item').eq(navItem.parent().index()).show()
             .siblings().hide();
+        e.preventDefault();
     })
 
 })();
