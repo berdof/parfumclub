@@ -74,7 +74,7 @@ h2 { font-size: 20px; padding-bottom: 14px; }
 
 h3 { font-size: 16px; padding-bottom: 10px; }
 
-.images-sprite, .ico_tel, .tel:before, .logo, .search input[type=submit], .basket__count, .slider__item__buy:before, .stuff__more:after, .basket-list-pay:after, .stuff-single__buy:after, .stuff__more:hover:after, .basket-list-pay:hover:after, .stuff-single__buy:hover:after, .stuff__more.hover:after, .best-stuff .stuff__more:after, .best-stuff .basket-list-pay:after, .best-stuff .stuff-single__buy:after, .why-we__item__orig, .why-we__item__delivery, .why-we__item__price, .why-we__item__unique, .nav_soc__vk, .nav_soc__fb, .nav_soc__twit, .nav_pay__amex, .nav_pay__visa, .nav_pay__mc, .nav_pay__discover, .nav_pay__1, .nav_pay__j, .nav_pay__pp { background: url('../images/images-s615b5421c6.png') no-repeat; }
+.images-sprite, .ico_tel, .tel:before, .logo, .search input[type=submit], .basket__count, .slider__item__buy:before, .stuff__more:after, .basket-list-pay:after, .stuff-single__buy:after, .stuff__more:hover:after, .basket-list-pay:hover:after, .stuff-single__buy:hover:after, .stuff__more.hover:after, .best-stuff .stuff__more:after, .best-stuff .basket-list-pay:after, .best-stuff .stuff-single__buy:after, .stuff:hover .stuff__more:after, .stuff:hover .basket-list-pay:after, .stuff:hover .stuff-single__buy:after, .why-we__item__orig, .why-we__item__delivery, .why-we__item__price, .why-we__item__unique, .nav_soc__vk, .nav_soc__fb, .nav_soc__twit, .nav_pay__amex, .nav_pay__visa, .nav_pay__mc, .nav_pay__discover, .nav_pay__1, .nav_pay__j, .nav_pay__pp { background: url('../images/images-s615b5421c6.png') no-repeat; }
 
 /***************************************************/
 /*      header
@@ -111,6 +111,7 @@ h3 { font-size: 16px; padding-bottom: 10px; }
 .header__nav a, .header__nav_alpha a { height: 28px; line-height: 25px; display: block; text-decoration: none; background: #fff; border: 1px solid #ccc; border-left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; min-width: 185px; padding: 0 15px !important; position: relative; }
 .header__nav a.active, .header__nav_alpha a.active { z-index: 10; border-bottom: 0; background: #f4f4f4; }
 .header__nav .header__nav__sub, .header__nav_alpha .header__nav__sub { display: none; position: absolute; left: 0; top: 27px; }
+.header__nav .header__nav__sub.inverse, .header__nav_alpha .header__nav__sub.inverse { left: auto; right: 0; }
 .header__nav ul, .header__nav_alpha ul { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #ccc; width: 100%; background: #f4f4f4; }
 .header__nav ul a, .header__nav_alpha ul a { background: #f4f4f4; border: 0 !important; min-width: 0 !important; }
 
@@ -166,10 +167,10 @@ h3 { font-size: 16px; padding-bottom: 10px; }
 
 .stuff__price_new { font: 300 16px 'Tahoma'; color: #003399; padding-bottom: 11px; }
 
-.stuff__more, .basket-list-pay, .stuff-single__buy { height: 27px; line-height: 27px; background: #fff; padding: 0 36px; border: 1px solid #359afe; width: 143px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: inline-block; text-decoration: none !important; color: #359afe; position: relative; }
+.stuff__more, .basket-list-pay, .stuff-single__buy { height: 27px; line-height: 27px; height: 27px; line-height: 25px; background: #fff; padding: 0 36px; border: 1px solid #359afe; width: 143px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: inline-block; text-decoration: none !important; color: #359afe; position: relative; }
 .stuff__more:after, .basket-list-pay:after, .stuff-single__buy:after { content: ''; position: absolute; right: -16px; top: -1px; display: block; background-position: 0 -922px; height: 27px; width: 16px; }
-.stuff__more:hover, .basket-list-pay:hover, .stuff-single__buy:hover, .stuff__more.hover, .best-stuff .stuff__more, .best-stuff .basket-list-pay, .best-stuff .stuff-single__buy, .basket-list-pay, .stuff-single__buy { color: #fff; background: #359afe; }
-.stuff__more:hover:after, .basket-list-pay:hover:after, .stuff-single__buy:hover:after, .stuff__more.hover:after, .best-stuff .stuff__more:after, .best-stuff .basket-list-pay:after, .best-stuff .stuff-single__buy:after, .basket-list-pay:after, .stuff-single__buy:after { background-position: 0 -786px; }
+.stuff__more:hover, .basket-list-pay:hover, .stuff-single__buy:hover, .stuff__more.hover, .best-stuff .stuff__more, .best-stuff .basket-list-pay, .best-stuff .stuff-single__buy, .stuff:hover .stuff__more, .stuff:hover .basket-list-pay, .stuff:hover .stuff-single__buy, .basket-list-pay, .stuff-single__buy { color: #fff; background: #359afe; }
+.stuff__more:hover:after, .basket-list-pay:hover:after, .stuff-single__buy:hover:after, .stuff__more.hover:after, .best-stuff .stuff__more:after, .best-stuff .basket-list-pay:after, .best-stuff .stuff-single__buy:after, .stuff:hover .stuff__more:after, .stuff:hover .basket-list-pay:after, .stuff:hover .stuff-single__buy:after, .basket-list-pay:after, .stuff-single__buy:after { background-position: 0 -786px; }
 
 .title { border-bottom: 1px dotted #ccc; margin: 20px 0 18px 0; }
 .title h2 { border: 1px dotted #ccc; border-bottom: 0; display: inline-block; background: #f4f4f4; height: 25px; padding: 0 82px 0 62px; font: 300 11px/25px 'Tahoma'; color: #333; }

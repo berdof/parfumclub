@@ -127,12 +127,16 @@
   text-align: center;
   &:hover {
     border: 1px solid #ccc;
+    .stuff__more{
+        @extend .hover;
+      }
   }
   h2 {
     font: 300 12px 'Verdana';
     text-align: center;
     padding-bottom: 10px;
   }
+
 }
 
 .stuff__img {
@@ -159,6 +163,8 @@
 
 .stuff__more {
   @include h-line-height(27px);
+  height: 27px;
+  line-height: 25px;
   background: #fff;
   padding: 0 36px;
   border: 1px solid #359afe;

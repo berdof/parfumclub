@@ -1,9 +1,17 @@
 ;
 (function () {
-    $('.header__nav > li > a , .header__nav_alpha > li > a ').on('click', function () {
-        var link = $(this),
-            subMenu = link.next('.header__nav__sub');
+    $('.header__nav > li ').on('click',function(){
+        headerNavHandler($(this).children('a'));
 
+    })
+    $('.header__nav_alpha > li ').on('hover', function () {
+
+        headerNavHandler($(this).children('a'));
+    })
+
+    function headerNavHandler(link) {
+        var subMenu = link.next('.header__nav__sub');
+        console.log(link);
         if (subMenu.length > 0) {
             link.toggleClass('active')
                 .closest('li')
@@ -12,7 +20,8 @@
             subMenu.toggle()
                 .closest('li').siblings('li').find('.header__nav__sub').hide();
         }
-    })
+    }
+
 
     $('.slider__in').cycle({
         pager: '.slider__nav',

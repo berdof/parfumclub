@@ -154,6 +154,10 @@
     position: absolute;
     left: 0;
     top: 27px;
+    &.inverse {
+      left: auto;
+      right: 0;
+    }
   }
   ul {
     @include box-sizing(border-box);
@@ -174,7 +178,7 @@
   width: 100%;
   background: #f4f4f4;
   border: 1px solid #ccc;
-  margin-bottom: 15px ;
+  margin-bottom: 15px;
   li {
     position: relative;
   }
